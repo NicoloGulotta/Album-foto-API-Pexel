@@ -2,7 +2,7 @@ function popolaDiv() {
     const apiKey = 'Q0RELKjBvdtJSZKwAju4wfiGZ3ZqEVDeIHxhqsbsJcbvRulK5ThtkPtk';
     const endpoint = 'https://api.pexels.com/v1/search';
     const query = 'dark';
-    const perPage = 30;
+    const perPage =18;
 
     fetch(`${endpoint}?query=${query}&per_page=${perPage}`, {
         headers: {
