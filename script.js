@@ -9,7 +9,7 @@ function popolaDiv(testoInserito) {
     const apiKey = 'Q0RELKjBvdtJSZKwAju4wfiGZ3ZqEVDeIHxhqsbsJcbvRulK5ThtkPtk';
     const endpoint = 'https://api.pexels.com/v1/search';
     const query = testoInserito;
-    const perPage =10;
+    const perPage =21;
 
     fetch(`${endpoint}?query=${query}&per_page=${perPage}`, {
         headers: {
@@ -27,8 +27,9 @@ function popolaDiv(testoInserito) {
                 myDiv.appendChild(img);
             });
         })
-        .catch(error => console.error(error));
+        .catch(error => alert(error));
 }
 function svuotaDiv() {
     document.getElementById('box').innerHTML = '';
+ testoInserito.value.innerHTML="";
 }
