@@ -1,8 +1,15 @@
-function popolaDiv() {
+function mostraTesto() {
+    var inputElement = document.getElementById('inputText');
+    var testoInserito = inputElement.value;
+    console.log(testoInserito)
+    popolaDiv(testoInserito);
+}
+
+function popolaDiv(testoInserito) {
     const apiKey = 'Q0RELKjBvdtJSZKwAju4wfiGZ3ZqEVDeIHxhqsbsJcbvRulK5ThtkPtk';
     const endpoint = 'https://api.pexels.com/v1/search';
-    const query = 'dark';
-    const perPage =18;
+    const query = testoInserito;
+    const perPage =10;
 
     fetch(`${endpoint}?query=${query}&per_page=${perPage}`, {
         headers: {
