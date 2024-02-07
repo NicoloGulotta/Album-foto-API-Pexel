@@ -10,13 +10,17 @@
 body {
   max-height: max-content;
 }
-
 div#container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+
+  background-color: gray;
+}
+h1{
+  margin: 10px;
 }
 
 div#box {
@@ -25,6 +29,7 @@ div#box {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  background-color: gray;
 }
 
 img {
